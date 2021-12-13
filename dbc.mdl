@@ -1,0 +1,428 @@
+{UTF-8}
+poner en cuarentena a asintomatico  = A FUNCTION OF( accion de concientizacion,asintomaticos infectados\
+		,seguimiento de contactos)
+	~	
+	~		|
+
+aislar a sintomatico  = A FUNCTION OF( fraccion de sintomaticos isopados,Sintomaticos infectados\
+		)
+	~	
+	~		|
+
+aislar asintomatico  = A FUNCTION OF( asintomaticos infectados,fraccion de asintomaticos isopados\
+		)
+	~	
+	~		|
+
+asintomaticos aislados  = A FUNCTION OF( aislar asintomatico)
+	~	
+	~		|
+
+asintomaticos aislados recuperados  = A FUNCTION OF( asintomaticos aislados)
+	~	
+	~		|
+
+asintomaticos en cuarentena  = A FUNCTION OF( poner en cuarentena a asintomatico)
+	~	
+	~		|
+
+asintomaticos en cuarentena recuperados  = A FUNCTION OF( asintomaticos en cuarentena\
+		)
+	~	
+	~		|
+
+asintomaticos infectados  = A FUNCTION OF( llegada externa de asintomaticos infectados\
+		,tasa de establecimiento de infeccion)
+	~	
+	~		|
+
+muerte  = A FUNCTION OF( fraccion muriendo,pacientes criticos)
+	~	
+	~		|
+
+contactos infectados por susceptible  = A FUNCTION OF( poblacion de varios compartimientos\
+		,poblacion total,tasa de contacto por rango de edad)
+	~	
+	~		|
+
+expuestos  = A FUNCTION OF( tasa de infeccion)
+	~	
+	~		|
+
+Sintomaticos en cuarentena  = A FUNCTION OF( tasa de incubacion en cuarentena)
+	~	
+	~		|
+
+Sintomaticos en cuarentena recuperados  = A FUNCTION OF( Sintomaticos en cuarentena)
+	~	
+	~		|
+
+Sintomaticos infectados  = A FUNCTION OF( asintomaticos infectados,tasa de incubacion\
+		)
+	~	
+	~		|
+
+recuperados  = A FUNCTION OF( recuperacion de asintomaticos,recuperacion de cuidados intensivos\
+		,recuperacion de sintomaticos,recuperacion en hospital)
+	~	
+	~		|
+
+poner en cuarentena a sintomatico  = A FUNCTION OF( concientizacion,Sintomaticos infectados\
+		)
+	~	
+	~		|
+
+tasa de contacto por rango de edad  = A FUNCTION OF( factor de ajuste,"tasa de contacto por ranfo de edad en casa, trabajo, escuela y otros"\
+		,tasa de intervencion de contactos)
+	~	
+	~		|
+
+tasa de empeoramiento  = A FUNCTION OF( fraccion empezando a ser critica,Pacientes hospitalizados\
+		)
+	~	
+	~		|
+
+tasa de establecimiento de infeccion  = A FUNCTION OF( expuestos)
+	~	
+	~		|
+
+infectividad  = A FUNCTION OF( infectados de base,uso de mascarillas y bioseguridad)
+	~	
+	~		|
+
+tasa de progresode enfermedad en sintomaticos aislados  = A FUNCTION OF( sintomaticos aislados\
+		)
+	~	
+	~		|
+
+Recuperados en cuarentena y aislados  = A FUNCTION OF( asintomaticos aislados recuperados\
+		,asintomaticos en cuarentena recuperados,sintomaticos aislados recuperados,Sintomaticos en cuarentena recuperados\
+		)
+	~	
+	~		|
+
+muertos  = A FUNCTION OF( muerte)
+	~	
+	~		|
+
+sintomaticos aislados  = A FUNCTION OF( aislar a sintomatico,tasa de incubacion de aislados\
+		)
+	~	
+	~		|
+
+Pacientes hospitalizados  = A FUNCTION OF( tasa de progreso de enfermedad,tasa de progreso de enfermedad en sintomaticos en cuarentena\
+		,tasa de progresode enfermedad en sintomaticos aislados)
+	~	
+	~		|
+
+tasa de progreso de enfermedad en sintomaticos en cuarentena  = A FUNCTION OF( Sintomaticos en cuarentena\
+		)
+	~	
+	~		|
+
+recuperacion en hospital  = A FUNCTION OF( fraccion empezando a ser critica,Pacientes hospitalizados\
+		)
+	~	
+	~		|
+
+tasa de incubacion  = A FUNCTION OF( asintomaticos infectados,fraccion desarrollando sintomas\
+		)
+	~	
+	~		|
+
+recuperacion de sintomaticos  = A FUNCTION OF( fraccion empezando a empeorar,Sintomaticos infectados\
+		)
+	~	
+	~		|
+
+recuperacion de asintomaticos  = A FUNCTION OF( asintomaticos infectados,fraccion desarrollando sintomas\
+		)
+	~	
+	~		|
+
+recuperacion de cuidados intensivos  = A FUNCTION OF( fraccion muriendo,pacientes criticos\
+		)
+	~	
+	~		|
+
+sintomaticos aislados recuperados  = A FUNCTION OF( sintomaticos aislados)
+	~	
+	~		|
+
+tasa de progreso de enfermedad  = A FUNCTION OF( fraccion empezando a empeorar,Sintomaticos infectados\
+		)
+	~	
+	~		|
+
+tasa de infeccion  = A FUNCTION OF( contactos infectados por susceptible,infectividad\
+		,susceptibles)
+	~	
+	~		|
+
+tasa de incubacion en cuarentena  = A FUNCTION OF( asintomaticos en cuarentena)
+	~	
+	~		|
+
+accion de concientizacion  = A FUNCTION OF( )
+	~	
+	~		|
+
+concientizacion  = A FUNCTION OF( )
+	~	
+	~		|
+
+factor de ajuste  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion de asintomaticos isopados  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion de sintomaticos isopados  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion desarrollando sintomas  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion empezando a empeorar  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion empezando a ser critica  = A FUNCTION OF( )
+	~	
+	~		|
+
+fraccion muriendo  = A FUNCTION OF( )
+	~	
+	~		|
+
+infectados de base  = A FUNCTION OF( )
+	~	
+	~		|
+
+llegada externa de asintomaticos infectados  = A FUNCTION OF( )
+	~	
+	~		|
+
+pacientes criticos  = A FUNCTION OF( tasa de empeoramiento)
+	~	
+	~		|
+
+poblacion de varios compartimientos  = A FUNCTION OF( )
+	~	
+	~		|
+
+poblacion total  = A FUNCTION OF( )
+	~	
+	~		|
+
+seguimiento de contactos  = A FUNCTION OF( )
+	~	
+	~		|
+
+susceptibles  = A FUNCTION OF( )
+	~	
+	~		|
+
+"tasa de contacto por ranfo de edad en casa, trabajo, escuela y otros"  = A FUNCTION OF\
+		( )
+	~	
+	~		|
+
+tasa de incubacion de aislados  = A FUNCTION OF( asintomaticos aislados)
+	~	
+	~		|
+
+tasa de intervencion de contactos  = A FUNCTION OF( )
+	~	
+	~		|
+
+uso de mascarillas y bioseguridad  = A FUNCTION OF( )
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,90,0
+10,1,factor de ajuste,-1016,-220,63,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,"tasa de contacto por ranfo de edad en casa, trabajo, escuela y otros",-853,-287,73,34,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,tasa de intervencion de contactos,-701,-233,62,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,tasa de contacto por rango de edad,-830,-98,59,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,poblacion de varios compartimientos,-609,-21,68,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,contactos infectados por susceptible,-812,125,60,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,poblacion total,-1062,35,61,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,tasa de infeccion,-834,276,40,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,infectividad,-934,417,49,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,infectados de base,-1052,533,56,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,uso de mascarillas y bioseguridad,-794,527,54,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,susceptibles,-1083,273,51,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,expuestos,-552,261,43,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,tasa de establecimiento de infeccion,-346,274,63,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,asintomaticos infectados,-132,250,57,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,16,llegada externa de asintomaticos infectados,-267,511,60,34,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,poner en cuarentena a asintomatico,-166,-7,53,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,accion de concientizacion,-371,-12,63,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,seguimiento de contactos,-390,100,61,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,asintomaticos en cuarentena,-132,-157,57,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,21,asintomaticos aislados,15,-267,57,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,22,asintomaticos en cuarentena recuperados,-205,-527,57,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,23,asintomaticos aislados recuperados,31,-428,57,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,24,Recuperados en cuarentena y aislados,369,-553,63,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,25,Sintomaticos en cuarentena recuperados,375,-401,65,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,26,tasa de incubacion de aislados,205,-249,58,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,27,sintomaticos aislados,524,-269,53,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,sintomaticos aislados recuperados,576,-471,53,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,Sintomaticos en cuarentena,370,-171,65,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,30,tasa de incubacion en cuarentena,121,-136,57,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,31,aislar asintomatico,49,-14,53,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,32,concientizacion,221,-70,63,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,33,poner en cuarentena a sintomatico,322,-6,52,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,34,fraccion de asintomaticos isopados,169,60,57,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,35,Sintomaticos infectados,337,244,54,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,36,tasa de incubacion,116,261,46,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,37,fraccion desarrollando sintomas,79,458,56,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,38,recuperacion de asintomaticos,134,642,65,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,39,recuperacion de sintomaticos,368,501,65,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,40,fraccion empezando a empeorar,461,325,55,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,41,tasa de progreso de enfermedad,576,255,51,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,42,Pacientes hospitalizados,760,240,59,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,43,tasa de empeoramiento,978,237,63,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,44,fraccion empezando a ser critica,927,435,55,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,45,recuperacion en hospital,773,534,65,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,46,recuperados,977,692,52,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,47,pacientes criticos,1175,234,40,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,48,recuperacion de cuidados intensivos,1191,375,65,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,49,fraccion muriendo,1430,209,41,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,50,muerte,1182,94,31,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,51,muertos,1165,-31,36,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,52,aislar a sintomatico,518,-33,49,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,53,fraccion de sintomaticos isopados,649,45,53,27,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,54,tasa de progreso de enfermedad en sintomaticos en cuarentena,851,-63,72,34,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,55,tasa de progresode enfermedad en sintomaticos aislados,850,-292,77,34,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,56,26,27,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(372,-228)|
+1,57,21,26,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(87,-226)|
+1,58,32,33,1,0,45,0,2,192,0,-1--1--1,|12||0-0-0,1|(314,-76)|
+1,59,34,31,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(136,-28)|
+1,60,18,17,1,0,45,0,2,192,0,-1--1--1,|12||0-0-0,1|(-292,-77)|
+1,61,19,17,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-248,109)|
+1,62,37,36,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1,369)|
+1,63,37,38,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(72,563)|
+1,64,40,39,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(388,405)|
+1,65,40,41,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(569,330)|
+1,66,44,45,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(797,437)|
+1,67,44,43,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(950,339)|
+1,68,53,52,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(563,67)|
+1,69,54,42,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(782,93)|
+1,70,43,47,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1084,277)|
+1,71,15,35,0,1,0,0,0,64,0,-1--1--1,,1|(97,247)|
+1,72,15,36,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(-6,213)|
+1,73,36,35,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(206,189)|
+1,74,16,15,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-286,371)|
+1,75,14,15,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-254,194)|
+1,76,13,14,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-449,201)|
+1,77,35,41,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(458,178)|
+1,78,42,43,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(855,193)|
+1,79,41,42,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(657,248)|
+1,80,49,50,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1383,63)|
+1,81,49,48,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1392,353)|
+1,82,47,48,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1290,293)|
+1,83,48,46,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(1256,605)|
+1,84,42,45,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(696,383)|
+1,85,45,46,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(814,651)|
+1,86,47,50,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1234,171)|
+1,87,50,51,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1093,35)|
+1,88,35,39,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(297,369)|
+1,89,39,46,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(600,721)|
+1,90,38,46,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(562,925)|
+1,91,15,38,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(-74,531)|
+1,92,10,9,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-1063,445)|
+1,93,11,9,1,0,45,0,2,192,0,-1--1--1,|12||0-0-0,1|(-813,430)|
+1,94,9,8,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-941,338)|
+1,95,12,8,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-960,239)|
+1,96,6,8,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-789,195)|
+1,97,8,13,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-705,233)|
+1,98,2,4,1,0,0,0,0,192,0,-1--1--1,,1|(-812,-205)|
+1,99,3,4,1,0,0,0,0,192,0,-1--1--1,,1|(-728,-150)|
+1,100,1,4,1,0,0,0,0,192,0,-1--1--1,,1|(-967,-135)|
+1,101,7,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-977,101)|
+1,102,5,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-671,75)|
+1,103,4,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-865,7)|
+1,104,17,20,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-99,-65)|
+1,105,15,17,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-97,122)|
+1,106,15,31,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-22,134)|
+1,107,31,21,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-25,-121)|
+1,108,35,33,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(301,138)|
+1,109,35,52,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(389,98)|
+1,110,52,27,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(555,-123)|
+1,111,29,54,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(682,-187)|
+1,112,20,30,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(23,-183)|
+1,113,30,29,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(234,-181)|
+1,114,20,22,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-291,-292)|
+1,115,22,24,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(81,-617)|
+1,116,21,23,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(-57,-361)|
+1,117,23,24,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(115,-437)|
+1,118,25,24,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(432,-467)|
+1,119,29,25,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(421,-285)|
+1,120,27,28,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(605,-345)|
+1,121,28,24,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(557,-583)|
+1,122,27,55,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(668,-278)|
+1,123,55,42,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(896,22)|
+///---\\\
+:L<%^E!@
+5:fraccion empezando a empeorar
+9:current
+19:90,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
